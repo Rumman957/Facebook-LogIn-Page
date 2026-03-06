@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1F2F6;
+}
+
+.wrapper {
+    /* border: 1px solid; */
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.top-text {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid; */
+}
+
+.FB-heading {
+    user-select: none;
+    color: #1975F5;
+    font-size: 50px;
+      transition: all 0.2s;
+}
+
+.FB-intro {
+    font-size: 20px;
+    margin-top: 10px;
+    color: rgb(63, 63, 63);
+
+}
+.FB-heading:hover{
+    transform: scale(0.9);
+
+}
+
+.intro2 {
+    color: rgb(63, 63, 63);
+    font-size: 20px;
+}
+
+.login_form {
+    border-bottom: 1px solid rgb(199, 196, 196);
+    display: flex;
+    /* margin-top: px; */
+    flex-direction: column;
+    /* padding: px; */
+    background-color: white;
+
+}
+
+.login-area {
+    /* border: 1px solid; */
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 450px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 9px 1px rgb(218, 215, 215);
+}
+
+.forget {
+    text-align: center;
+    text-decoration: none;
+    color: rgb(9, 99, 235);
+    font-size: 15px;
+    margin-block: 20px;
+}
+
+.input {
+    width: 100%;
+    outline: none;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid rgb(199, 196, 196);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.2s;
+}
+.input:focus{
+    transform: scale(0.9);
+    
+}
+
+.input::placeholder {
+    color: rgb(199, 196, 196);
+}
+
+.new-account {
+    /* background-color: rgb(14, 155, 14); */
+    background-color: #42B728;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 15px 20px 15px 20px;
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+      transition: all 0.2s;
+    
+}
+.new-account:hover{
+      transform: scale(1.03);
+}
+
+
+.login {
+    background-color: #1977F2;
+    color: white;
+    padding-block: 15px;
+    border-radius: 8px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+}
+.login:hover{
+    opacity: 0.9;
+}
+
+/* for mobile */
+
+@media (max-width:450px) {
+    .login-area {
+        width: 310px;
+    }
+
+    .FB-intro,
+    .intro2 {
+        font-size: 17px;
+    }
+}
