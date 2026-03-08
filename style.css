@@ -9,6 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #F1F2F6;
@@ -136,6 +137,19 @@ body {
     opacity: 0.9;
 }
 
+/* Disclaimer */
+.disclaimer {
+    color: rgb(85, 85, 85);
+    position: relative;
+    top: 100px;
+    left: 10px;
+    user-select: none;
+}
+.disclaimer span {
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 /* for mobile */
 
 @media (max-width:450px) {
@@ -146,5 +160,8 @@ body {
     .FB-intro,
     .intro2 {
         font-size: 17px;
+    }
+    .disclaimer, .disclaimer span {
+        font-size: 0.9rem;
     }
 }
